@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AnimeChart</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+
+        <div class="logo">
+            Anime<span>Chart</span>
+        </div>
+
+        <nav>
+    <a href="#countdown">Live</a>
+    <a href="#schedule">Schedule</a>
+    <a href="#anime">Anime</a>
+</nav>
+
+<div class="user-area" id="userArea">
+
+    <a href="login.html" id="loginBtn">
+        🔐 Login
+    </a>
+
+    <div
+        class="user-menu"
+        id="userMenu"
+        style="display:none;"
+    >
+
+        <button
+            class="user-btn"
+            id="userBtn"
+        >
+            👤 <span id="userEmail">User</span>
+            <span>⌄</span>
+        </button>
+
+        <div
+            class="user-dropdown"
+            id="userDropdown"
+        >
+
+            <div class="user-email">
+                <small>Logged in as</small>
+                <span id="dropdownEmail"></span>
+            </div>
+
+            <button id="logoutBtn">
+                🚪 Logout
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<button id="themeBtn">🌙</button>
+
+    </header>
+
+
+    <!-- HERO -->
+    <section class="hero">
+
+        <h1>AnimeChart</h1>
+
+        <p>
+            Track your favorite anime, upcoming episodes and weekly schedule.
+        </p>
+
+    </section>
+
+    <!-- LIVE COUNTDOWN -->
+    <section id="countdown" class="section">
+
+        <div class="section-title">
+            <h2>🔴 Live Countdown</h2>
+            <span>Next Episode</span>
+        </div>
+
+        <div id="countdownBox" class="countdown-box">
+
+            <div class="loading">
+                Loading...
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- WEEKLY SCHEDULE -->
+    <section id="schedule" class="section">
+
+        <div class="section-title">
+            <h2>📅 Weekly Schedule</h2>
+        </div>
+
+        <div class="days">
+
+    <button class="day" data-day="1">
+        Mon
+    </button>
+
+    <button class="day" data-day="2">
+        Tue
+    </button>
+
+    <button class="day" data-day="3">
+        Wed
+    </button>
+
+    <button class="day" data-day="4">
+        Thu
+    </button>
+
+    <button class="day" data-day="5">
+        Fri
+    </button>
+
+    <button class="day" data-day="6">
+        Sat
+    </button>
+
+    <button class="day" data-day="0">
+        Sun
+    </button>
+
+</div>
+
+        <div id="scheduleList" class="schedule-list">
+
+            <div class="loading">
+                Loading schedule...
+            </div>
+
+        </div>
+
+    </section>
+ <section class="season-section">
+
+    <div class="season-header">
+
+        <h2>📅 Anime Seasons</h2>
+
+        <span id="currentSeasonLabel">
+            Summer 2026
+        </span>
+
+    </div>
+
+
+    <!-- YEAR SELECTOR -->
+
+    <div class="year-selector" id="yearSelector">
+    <!-- Years will be generated automatically -->
+</div>
+
+
+    <!-- SEASON SELECTOR -->
+
+    <div class="season-buttons">
+
+        <button
+            class="season-btn"
+            data-season="WINTER">
+            Winter
+        </button>
+
+        <button
+            class="season-btn"
+            data-season="SPRING">
+            Spring
+        </button>
+
+        <button
+            class="season-btn active"
+            data-season="SUMMER">
+            Summer
+        </button>
+
+        <button
+            class="season-btn"
+            data-season="FALL">
+            Fall
+        </button>
+
+    </div>
+
+</section>
+
+    <!-- ANIME LIST -->
+    <section id="anime" class="section">
+
+        <div class="section-title">
+
+            <h2>🎌 Anime List</h2>
+
+            <input
+                type="text"
+                id="search"
+                placeholder="Search anime..."
+            >
+
+        </div>
+
+        <div id="animeList" class="anime-grid">
+
+            <div class="loading">
+                Loading anime...
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <footer>
+
+        <p>AnimeChart • Powered by AniList</p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+   <script
+    type="module"
+    src="auth-ui.js"
+></script>
+<script type="module" src="analytics.js"></script>
+</body>
+</html>
