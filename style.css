@@ -1616,3 +1616,132 @@ body.light .header {
     color: var(--accent);
 
 }
+/* ========================================
+   LEGAL / INFORMATION PAGES
+======================================== */
+
+.legal-page {
+
+    max-width: 900px;
+
+    margin: 0 auto;
+
+    padding: 60px 20px;
+
+    min-height: calc(100vh - 65px);
+
+}
+
+
+.legal-page h1 {
+
+    font-size: 38px;
+
+    margin-bottom: 30px;
+
+}
+
+
+.legal-page h2 {
+
+    font-size: 22px;
+
+    margin-top: 35px;
+
+    margin-bottom: 12px;
+
+}
+
+
+.legal-page p {
+
+    color: var(--muted);
+
+    line-height: 1.8;
+
+    margin-bottom: 15px;
+
+}
+
+
+.legal-page ul {
+
+    color: var(--muted);
+
+    line-height: 2;
+
+    padding-left: 25px;
+
+}
+
+
+.legal-page a {
+
+    color: var(--accent2);
+
+}
+
+
+footer {
+
+    border-top: 1px solid var(--border);
+
+}
+
+
+.footer-links {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+
+    margin-top: 12px;
+
+}
+
+
+.footer-links a {
+
+    color: var(--muted);
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+}
+
+
+.footer-links a:hover {
+
+    color: white;
+
+}
+
+
+@media (max-width: 600px) {
+
+    .legal-page {
+
+        padding: 40px 18px;
+
+    }
+
+
+    .legal-page h1 {
+
+        font-size: 30px;
+
+    }
+
+
+    .legal-page h2 {
+
+        font-size: 20px;
+
+    }
+
+}
